@@ -1,0 +1,259 @@
+.ww{
+    width:100%;
+
+}
+.ab{
+    width: 45%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin-top: 20px;
+    border-radius: 37px;
+ 
+    margin-left: 10px;
+    
+}
+
+
+html { 
+    background-image: url('https://wallpaperaccess.com/full/6558430.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+   
+    
+    
+  }
+
+  
+
+  .gallery {
+    --g: 8px;
+    --s: 400px;
+    /* display: grid; */
+    border-radius: 50%;
+    display: inline-grid;
+    margin-right: -6px;
+  }
+  .gallery > img {
+    grid-area: 1/1;
+    width: 231px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: translate(var(--_x,0),var(--_y,0));
+    cursor: pointer;
+    z-index: 0;
+    transition: .3s, z-index 0s .3s;
+    margin-top: 21px;
+    
+  }
+  .gallery img:hover {
+    --_i: 1;
+    z-index: 1;
+    transition: transform .2s, clip-path .3s .2s, z-index 0s;
+  }
+  .gallery:hover img {
+    transform: translate(0,0);
+  }
+  .gallery > img:nth-child(1) {
+    clip-path: polygon(50% 50%,calc(50%*var(--_i,0)) calc(120%*var(--_i,0)),0 calc(100%*var(--_i,0)),0 0,100% 0,100% calc(100%*var(--_i,0)),calc(100% - 50%*var(--_i,0)) calc(120%*var(--_i,0)));
+    --_y: calc(-1*var(--g))
+  }
+  .gallery > img:nth-child(2) {
+    clip-path: polygon(50% 50%,calc(100% - 120%*var(--_i,0)) calc(50%*var(--_i,0)),calc(100% - 100%*var(--_i,0)) 0,100% 0,100% 100%,calc(100% - 100%*var(--_i,0)) 100%,calc(100% - 120%*var(--_i,0)) calc(100% - 50%*var(--_i,0)));
+    --_x: var(--g)
+  }
+  .gallery > img:nth-child(3) {
+    clip-path: polygon(50% 50%,calc(100% - 50%*var(--_i,0)) calc(100% - 120%*var(--_i,0)),100% calc(100% - 120%*var(--_i,0)),100% 100%,0 100%,0 calc(100% - 100%*var(--_i,0)),calc(50%*var(--_i,0)) calc(100% - 120%*var(--_i,0)));
+    --_y: var(--g)
+  }
+  .gallery > img:nth-child(4) {
+    clip-path: polygon(50% 50%,calc(120%*var(--_i,0)) calc(50%*var(--_i,0)),calc(100%*var(--_i,0)) 0,0 0,0 100%,calc(100%*var(--_i,0)) 100%,calc(120%*var(--_i,0)) calc(100% - 50%*var(--_i,0)));
+    --_x: calc(-1*var(--g))
+  }
+  
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --gold: #ffb338;
+    --light-shadow: #77571d;
+    --dark-shadow: #3e2904;
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-areas: 'overlap';
+    place-content: center;
+    text-transform: uppercase;
+    height: 11vh;
+    /* font-size: 7px; */
+    width: auto;
+  }
+  .wrapper > div {
+    background-clip: text;  
+    -webkit-background-clip: text;
+    color: #363833;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: clamp( 3em, 18vw, 15rem);
+    grid-area: overlap;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 4px transparent;
+    margin-top: -1px;
+  }
+  div.bg {
+    background-image: repeating-linear-gradient( 105deg, 
+      var(--gold) 0% , 
+      var(--dark-shadow) 5%,
+      var(--gold) 12%);
+    color: transparent;
+    filter: drop-shadow(5px 15px 15px black);
+    transform: scaleY(1.05);
+    transform-origin: top;
+  }
+  div.fg{
+    background-image: repeating-linear-gradient( 5deg,  
+      var(--gold) 0% , 
+      var(--light-shadow) 23%, 
+      var(--gold) 31%);
+    color: #1e2127;
+    transform: scale(1);
+  }
+
+
+
+  
+
+  
+
+  @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+
+
+::selection {
+	background: transparent;
+}
+
+h4 {
+	font-size: 26px;
+	line-height: 1px;
+	font-family: 'Amatic SC', cursive !important;
+}
+
+.color1{color:#b03acf}/*MOUNTAIN MEADOW*/
+.color2{color:#C0392B/*TALL POPPY*/}
+
+
+.card {
+	color: #013243; /*SHERPA BLUE*/
+	/* position: absolute;  */
+    top: 14%;
+    left: 50%;
+    width: 300px;
+    height: 400px;
+    background: #e8e0ab;
+    transform-style: preserve-3d;
+    transform: translate(-50%,-50%) perspective(2000px);
+    box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 20px 0 60px rgba(0,0,0,.5);
+    transition: 1s;
+    margin-top: 244px;
+    margin-left: 17px;
+    position: relative;
+
+}
+
+.card:hover {
+	transform: translate(-50%,-50%) perspective(2000px) rotate(15deg) scale(1.2);
+	box-shadow: inset 20px 0 50px rgba(0,0,0,.5), 0 10px 100px rgba(0,0,0,.5);
+}
+
+.card:before {
+	content:'';
+	position: absolute;
+	top: -5px;
+	left: 0;
+	width: 100%;
+	height: 5px;
+	background: #BAC1BA;
+	transform-origin: bottom;
+	transform: skewX(-45deg);
+}
+
+.card:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -5px;
+	width: 5px;
+	height: 100%;
+	background: #92A29C;
+	transform-origin: left;
+	transform: skewY(-45deg);
+}
+
+.card .imgBox {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transform-origin: left;
+	transition: .7s;
+}
+
+.card .bark {
+	position: absolute;
+	background: #e0e1dc;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: .7s;
+}
+
+.card .imgBox img {
+	min-width: 250px;
+	max-height: 400px;
+}
+
+.card:hover .imgBox {
+	transform: rotateY(-135deg);
+}
+
+.card:hover .bark {
+	opacity: 1;
+	transition: .6s;
+  box-shadow: 300px 200px 100px rgba(0, 0, 0, .4) inset;
+}
+
+.card .details {
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	padding: 0 0 0 10px;
+	z-index: -1;
+	margin-top: 70px;
+}
+
+.card .details p {
+	font-size: 15px;
+	line-height: 5px;
+	transform: rotate(-10deg);
+	padding: 0 0 0 20px;
+}
+
+.card .details h4 {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.ag{
+    font-size: xx-large;
+    color: #48493b;
+    white-space: 1px;
+    font-size: xx-large;
+}
+
