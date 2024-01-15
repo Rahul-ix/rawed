@@ -1,12 +1,12 @@
 import React from 'react'; 
-import wall from "./images/wall.jpg";
-import vk2 from "./images/vk2.jpg";
-import vk3 from "./images/vk3.jpg";
-import vk4 from "./images/vk4.jpg";
-import vk5 from "./images/vk5.jpg";
-import vk6 from "./images/vk6.jpg";
-import vk7 from "./images/vk7.jpg";
-import book2 from "./images/book2.jpg";
+import wall from "./images/ra1.jpg";
+import vk2 from "./images/ra2.jpg";
+import vk3 from "./images/ra3.jpg";
+import vk4 from "./images/ra4.jpg";
+import vk5 from "./images/ra5.jpg";
+import vk6 from "./images/ra8.jpg";
+import vk7 from "./images/ra7.jpg";
+import book2 from "./images/ra6.jpg";
 import './style.css'
 
 const WeddingCard = () => {
@@ -14,8 +14,8 @@ const WeddingCard = () => {
     
       <div className="slider-container">
       <div class="wrapper">
-  <div class="bg"> VA </div>
-  <div class="fg"> VA </div>
+  <div class="bg"> RA </div>
+  <div class="fg"> RA </div>
 </div>
 
  <img src={wall} className='ww'/>
@@ -38,7 +38,7 @@ const WeddingCard = () => {
 			<img src={book2}/>
 		</div>
 		<div class="details">
-			<h4 class="color1">virat kohli and anushka sharma</h4>
+			<h4 class="color1">Ranbir kapoor and Alia Bhatt</h4>
 			<h4 class="color2 margin">(HAPPY MARRIED LIFE)</h4>
 			<p>YOU'R TEXT,</p>
 			<p>text.. .</p>
@@ -55,6 +55,11 @@ const WeddingCard = () => {
 
 <div class="centered">
 
+ <video className='med' width="400" controls>
+      <source src="" type="video/mp4"/>
+      <source src="" type="video/ogg"/>
+    </video>
+
 
 
 <center className='location'> 
@@ -63,8 +68,7 @@ const WeddingCard = () => {
 
           
         <div> 
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95465.5147307613!2d77.58971991152218!3d12.919706253506574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1704371923818!5m2!1sen!2sin"></iframe>
-        </div> 
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.14571418945!2d72.71637348622276!3d19.082177512813335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1705294377581!5m2!1sen!2sin" width="600"></iframe>        </div> 
     </center> 
 </div>
 
