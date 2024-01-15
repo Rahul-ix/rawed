@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/rawed/static/css/main.8b8745cf.css",
+    "main.js": "/rawed/static/js/main.3e077c21.js",
+    "static/js/787.7b5716e5.chunk.js": "/rawed/static/js/787.7b5716e5.chunk.js",
+    "static/media/ra6.jpg": "/rawed/static/media/ra6.5e9bbb8468bfa6cdf569.jpg",
+    "static/media/ra7.jpg": "/rawed/static/media/ra7.f708a66c83e226c82e60.jpg",
+    "static/media/ra2.jpg": "/rawed/static/media/ra2.8a3ebef3e2974974fe09.jpg",
+    "static/media/ra8.jpg": "/rawed/static/media/ra8.622afaefaa789e0bea41.jpg",
+    "static/media/ra4.jpg": "/rawed/static/media/ra4.bb1afe67447481126bd7.jpg",
+    "static/media/ra5.jpg": "/rawed/static/media/ra5.f425af38983f8d11dc75.jpg",
+    "static/media/ra1.jpg": "/rawed/static/media/ra1.bb6529fe075b0d3bb4b5.jpg",
+    "static/media/ra3.jpg": "/rawed/static/media/ra3.0c851116c47d10d775ba.jpg",
+    "index.html": "/rawed/index.html",
+    "main.8b8745cf.css.map": "/rawed/static/css/main.8b8745cf.css.map",
+    "main.3e077c21.js.map": "/rawed/static/js/main.3e077c21.js.map",
+    "787.7b5716e5.chunk.js.map": "/rawed/static/js/787.7b5716e5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8b8745cf.css",
+    "static/js/main.3e077c21.js"
+  ]
+}
